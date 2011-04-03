@@ -3,13 +3,15 @@ PHP-YouTube-Site-o-Matic
 
 Takes a YouTube username (and a couple other variables) and returns a whole video website with paginated lists, thumbnails, embeds, comments, and an RSS feed.
 
+![Tommy and the Tommies](http://iamnotagoodartist.com/wp-content/uploads/2011/04/phpyoutube_tommies.jpg)
+
 Basically, it's your YouTube profile with its own domain and CSS.
 
-__Examples:__
+### Examples:
 
-* [tommyandthetommies.com](http://tommyandthetommies.com/)
+* [tommyandthetommies.com](http://tommyandthetommies.com/)<br />
   The site I originally wrote this script for. Uses the included CSS. Only has a couple videos.
-* [videos.iamnotagoodartist.com](http://videos.iamnotagoodartist.com/)
+* [videos.iamnotagoodartist.com](http://videos.iamnotagoodartist.com/)<br />
   More videos and a slightly modified stylesheet.
 
 Needs PHP5 and a YouTube username. Doesn't need a database or a YouTube API key.
