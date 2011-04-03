@@ -5,7 +5,7 @@ if ((isset($_GET["page"])) && (intval($_GET["page"])) == 0) {
 }
 
 if (isset($id)) {
-	echo stripbranding($youtube->feed->title)." - ";
+	echo $youtube->feed->title." - ";
 }
 
 echo $uservar_sitename;

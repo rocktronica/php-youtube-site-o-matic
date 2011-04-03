@@ -33,7 +33,37 @@
 		<array>
 			<dict>
 				<key>DocumentURL</key>
-				<string>file://localhost/Users/tommysaylor/Dropbox/web/tommyandthetommies/index.php</string>
+				<string>file://localhost/Users/tommysaylor/Dropbox/web/php-youtube-site-o-matic/index.php</string>
+				<key>StateType</key>
+				<string>DefaultTab</string>
+			</dict>
+			<dict>
+				<key>DocumentURL</key>
+				<string>file://localhost/Users/tommysaylor/Dropbox/web/php-youtube-site-o-matic/includes/about.php</string>
+				<key>StateType</key>
+				<string>DefaultTab</string>
+			</dict>
+			<dict>
+				<key>DocumentURL</key>
+				<string>file://localhost/Users/tommysaylor/Dropbox/web/php-youtube-site-o-matic/includes/base.php</string>
+				<key>StateType</key>
+				<string>DefaultTab</string>
+			</dict>
+			<dict>
+				<key>DocumentURL</key>
+				<string>file://localhost/Users/tommysaylor/Dropbox/web/php-youtube-site-o-matic/includes/list.php</string>
+				<key>StateType</key>
+				<string>DefaultTab</string>
+			</dict>
+			<dict>
+				<key>DocumentURL</key>
+				<string>file://localhost/Users/tommysaylor/Dropbox/web/php-youtube-site-o-matic/includes/id.php</string>
+				<key>StateType</key>
+				<string>DefaultTab</string>
+			</dict>
+			<dict>
+				<key>DocumentURL</key>
+				<string>file://localhost/Users/tommysaylor/Dropbox/web/php-youtube-site-o-matic/includes/title.php</string>
 				<key>StateType</key>
 				<string>DefaultTab</string>
 			</dict>

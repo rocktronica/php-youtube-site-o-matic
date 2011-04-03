@@ -31,11 +31,6 @@ class WebHole_Youtube_Feed{
 	}
 }
 
-function stripbranding($str) {
-	$str = str_replace("http://tommyandthetommies.com/","",$str);
-	return str_replace(" - Tommy and the Tommies","",$str);
-}
-
 function firstp($str) {
 	if (strpos($str,"\n") != "") {
 		return "<p>".substr($str, 0, strpos($str,"\n")."</p>");

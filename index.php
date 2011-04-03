@@ -1,11 +1,11 @@
 <?php
 
 // USER VARIABLES
-$uservar_sitename = "Rocktronica";			// Title of site
-$uservar_account = "rocktronica";			// YouTube username
-$uservar_url = "tommyandthetommies.com";	// For RSS feed
-$uservar_count = 10;						// # of videos to show
-$uservar_embedwidth = 613;					// Width of embed
+$uservar_sitename = "PHP-YouTube-Site-o-Matic";			// Title of site
+$uservar_account = "rocktronica";						// YouTube username
+$uservar_url = "tommyandthetommies.com";				// For RSS feed
+$uservar_count = 10;									// # of videos to show
+$uservar_embedwidth = 613;								// Width of embed
 
 $width = $uservar_embedwidth;
 $height = $width*.5625+25;
@@ -37,7 +37,7 @@ if ($_GET["page"] == "rss") {
 		<ul>
 			<li><a href="/">Home</a></li>
 			<li><a href="/?page=about">About</a></li>
-			<li><a href="http://feeds.feedburner.com/TommyAndTheTommies">RSS</a></li>
+			<li><a href="/?page=rss">RSS</a></li>
 			<li><a href="http://www.youtube.com/user/<?php echo $uservar_account; ?>" class="external">Channel &#187;</a></li>
 			<li><a href="http://www.youtube.com/inbox?to_users=<?php echo $uservar_account; ?>&action_compose=1" class="external">Send Message &#187;</a></li>
 		</ul>
@@ -59,7 +59,7 @@ if ($_GET["page"] == "rss") {
 		} ?>
 	</div>
 	<div id="footer">
-		<p><?php echo date("Y");?> <a href="/"><?php echo $uservar_sitename; ?></a>. An <a href="http://iamnotagoodartist.com">iamnotagoodartist</a> project. Hosted by <a href="http://www.dreamhost.com/r.cgi?314167">DreamHost</a>.</p>
+		<p><?php echo date("Y");?> <a href="/"><?php echo $uservar_sitename; ?></a>.</p>
 	</div>
 </div>
 
