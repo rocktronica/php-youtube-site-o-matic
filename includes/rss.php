@@ -14,12 +14,12 @@
 		<?php foreach ($youtube->feed->entry as $video) {
 			$id = basename($video->id); ?> 
 			<item>
-				<title><?php echo stripbranding($video->title); ?></title>
+				<title><?php echo $video->title; ?></title>
 				<link>http://<?php echo $uservar_url."/?id=".$id; ?></link>
 				<pubDate><?php echo $video->published; ?></pubDate>
 				<description><![CDATA[
 					<p><object width="640" height="385"><param name="movie" value="http://www.youtube.com/v/<?php echo $id; ?>&hl=en_US&fs=1"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/<?php echo $id; ?>&hl=en_US&fs=1" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="640" height="385"></embed></object></description>
-					<?php echo wpautop(stripbranding($video->content)); ?>
+					<?php echo wpautop($video->content); ?>
 				]]></description>
 			</item>
 		<?php } ?>

@@ -3,7 +3,7 @@
 // USER VARIABLES
 $uservar_sitename = "PHP-YouTube-Site-o-Matic";			// Title of site
 $uservar_account = "rocktronica";						// YouTube username
-$uservar_url = "tommyandthetommies.com";				// For RSS feed
+$uservar_url = $_SERVER["HTTP_HOST"];					// For RSS feed
 $uservar_count = 10;									// # of videos to show
 $uservar_embedwidth = 613;								// Width of embed
 
