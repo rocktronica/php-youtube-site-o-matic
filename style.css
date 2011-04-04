@@ -29,8 +29,8 @@ body {
 	font-family: Helvetica Neue, Arial, Helvetica, sans-serif;
 	font-size: 14px;
 	line-height: 20px;
-	color: #FFF;
-	background-color: #141414;
+	color: #000;
+	background-color: #fff;
 }
 
 h1,h2,h3,h4,h5,h6,p,ul,ol,li,hr,pre,blockquote { margin-bottom: 20px; line-height: 20px; }
@@ -38,21 +38,17 @@ h1,h2,h3,h4,h5,h6,p,ul,ol,li,hr,pre,blockquote { margin-bottom: 20px; line-heigh
 h1,h2,h3,h4,h5,h6 {
 	font-weight: bold;
 	font-family: Helvetica, Helvetica Neue, Arial, sans-serif;
-	letter-spacing: -.05em;
-	text-transform: uppercase;
 }
 
 h1 { font-size: 60px; line-height: 60px; }
 h2, h3 { font-size: 24px; }
 
-h1 a:visited, a {
+a {
 	text-decoration: none;
-	color: #0099FF;
+	color: #EB0000;
 }
 
-a:visited { color: #00558D; }
-h1 a:visited:hover, a:hover { color: #80CCFF; }
-a:visited:hover { color: #0099FF; }
+a:hover { color: #FF0000; }
 a.noborder { border: none; }
 
 b,strong, .strong { font-weight: bold; }
