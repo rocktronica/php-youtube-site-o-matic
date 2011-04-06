@@ -27,7 +27,6 @@ Open `index.php` and switch out the user variables with your own. If `$_SERVER["
 Credit
 ------
 
-* [PHP Class To Get and Read a Youtube User’s Video Feed](http://webhole.net/2009/11/24/how-to-parse-a-youtube-feed-with-ph/)
 * Mullenweg's [AutoP function](http://ma.tt/scripts/autop/)
 * [jQuery Masonry](http://desandro.com/resources/jquery-masonry) by David DeSandro
 

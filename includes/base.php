@@ -1,9 +1,14 @@
 <?php
 
+ini_set('display_errors',1);
+error_reporting (E_ALL ^ E_NOTICE);
+
+if (!function_exists("simplexml_load_file")) { exit("Require function 'simplexml_load_file' not found."); }
+
 if (isset($_GET["id"])) {
 	$id = $_GET["id"];
 	$youtube->username=$uservar_account;
-	$youtube->feedUrl=$url="http://gdata.youtube.com/feeds/api/users/".$uservar_account."/uploads/".$id;
+	$url="http://gdata.youtube.com/feeds/api/users/".$uservar_account."/uploads/".$id;
 	$youtube->feed=simplexml_load_file($url);
 } else {
 	if ((isset($_GET["p"])) && (intval($_GET["p"])) !== 0) {
@@ -15,20 +20,11 @@ if (isset($_GET["id"])) {
 	}
 	$youtube->username=$uservar_account;
 	if ($page == 1) {
-		$youtube->feedUrl=$url="http://gdata.youtube.com/feeds/api/users/".$uservar_account."/uploads?&start-index=".$start."&max-results=".($uservar_count+1);
+		$url="http://gdata.youtube.com/feeds/api/users/".$uservar_account."/uploads?&start-index=".$start."&max-results=".($uservar_count+1);
 	} else {
-		$youtube->feedUrl=$url="http://gdata.youtube.com/feeds/api/users/".$uservar_account."/uploads?&start-index=".$start."&max-results=".$uservar_count;	
+		$url="http://gdata.youtube.com/feeds/api/users/".$uservar_account."/uploads?&start-index=".$start."&max-results=".$uservar_count;	
 	}
 	$youtube->feed=simplexml_load_file($url);
-}
-
-// http://webhole.net/2009/11/24/how-to-parse-a-youtube-feed-with-ph/
-class WebHole_Youtube_Feed{
-	function __construct($username) {
-		$this->username=$username;
-		$this->feedUrl=$url='http://gdata.youtube.com/feeds/api/users/'.$this->username.'/uploads';
-		$this->feed=simplexml_load_file($url);
-	}
 }
 
 function firstp($str) {

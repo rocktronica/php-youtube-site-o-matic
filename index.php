@@ -1,16 +1,14 @@
 <?php
 
 // USER VARIABLES
-$uservar_sitename = "PHP-YouTube-Site-o-Matic";			// Title of site
-$uservar_account = "rocktronica";						// YouTube username
-$uservar_url = $_SERVER["HTTP_HOST"];					// For RSS feed
-$uservar_count = 10;									// # of videos to show
-$uservar_embedwidth = 613;								// Width of embed
+$uservar_sitename = "Example PHP-YouTube-Site-o-Matic Site";	// Title of site
+$uservar_account = "youtube";									// YouTube username
+$uservar_url = $_SERVER["HTTP_HOST"];							// For RSS feed
+$uservar_count = 10;											// # of videos to show
+$uservar_embedwidth = 613;										// Width of embed
 
 $width = $uservar_embedwidth;
-$height = $width*.5625+25;
-
-error_reporting (E_ALL ^ E_NOTICE);
+$height = intval($width*.5625+25);
 
 include "includes/base.php";
 
@@ -59,7 +57,7 @@ if ($_GET["page"] == "rss") {
 		} ?>
 	</div>
 	<div id="footer">
-		<p><?php echo date("Y");?> <a href="/"><?php echo $uservar_sitename; ?></a>.</p>
+		<p><?php echo date("Y");?> <a href="/"><?php echo $uservar_sitename; ?></a>. Powered by <a href="https://github.com/rocktronica/php-youtube-site-o-matic">PHP-YouTube-Site-o-Matic</a>.</p>
 	</div>
 </div>
 
