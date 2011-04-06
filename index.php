@@ -1,11 +1,12 @@
 <?php
 
 // USER VARIABLES
-$uservar_sitename = "Example PHP-YouTube-Site-o-Matic Site";	// Title of site
-$uservar_account = "youtube";									// YouTube username
-$uservar_url = $_SERVER["HTTP_HOST"];							// For RSS feed
-$uservar_count = 10;											// # of videos to show
-$uservar_embedwidth = 613;										// Width of embed
+$uservar_sitename = "Example PHP-YouTube-Site-o-Matic Site";  // Title of site
+$uservar_account = "youtube";                                 // YouTube username
+$uservar_url = $_SERVER["HTTP_HOST"];                         // For RSS feed
+$uservar_count = 10;                                          // # of videos to show
+
+$uservar_embedwidth = 613;                                    // Width of embed (Suit to CSS)
 
 $width = $uservar_embedwidth;
 $height = intval($width*.5625+25);
